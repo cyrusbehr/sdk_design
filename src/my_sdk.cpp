@@ -53,8 +53,6 @@ ErrorCode MySDK::Impl::getFaceBoxAndLandmarks(const std::string &imgPath, bool& 
         fb.bottomRight.x = bbox.x2;
         fb.bottomRight.y = bbox.y2;
 
-        fb.faceScore = bbox.score;
-
         for (int i = 0; i < 5; ++i) {
             Point p;
             p.x = static_cast<int>(bbox.landmark.x[i]);

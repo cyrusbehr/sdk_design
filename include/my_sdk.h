@@ -17,7 +17,6 @@ namespace sdk {
     };
 
     struct FaceBoxAndLandmarks {
-        float faceScore;
         Point topLeft;
         Point bottomRight;
         std::array<Point, 5> landmarks;
