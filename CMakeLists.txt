@@ -4,6 +4,9 @@ cmake_minimum_required(VERSION 3.0)
 option(BUILD_ARM32 "Cross compile the SDK for arm32" OFF)
 option(BUILD_ARM64 "Cross compile the SDK for arm64" OFF)
 
+# Required for python bindings library
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fpic")
+
 # Choose the appropriate toolchain file
 if (BUILD_ARM32)
     SET (CMAKE_TOOLCHAIN_FILE tools/toolchain-arm32.cmake)
@@ -75,12 +78,25 @@ else()
             )
 endif()
 
-
-
-
 # Unit test
 add_executable(test tests/test.cpp)
 target_link_libraries(test ${CMAKE_CURRENT_BINARY_DIR}/libmy_sdk.a OpenMP::OpenMP_CXX)
 target_include_directories(test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/include)
 target_include_directories(test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/3rdparty/catch2)
 add_dependencies(test my_sdk)
+
+# Create python bindings library
+# Only build for amd64
+if (NOT BUILD_ARM64 AND NOT BUILD_ARM32)
+    add_subdirectory(3rdparty/pybind11-2.3.0)
+    add_library(mysdk SHARED python/py_binding.cpp)
+    add_dependencies(mysdk my_sdk)
+
+    target_link_libraries(mysdk PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/libmy_sdk.a pybind11::module OpenMP::OpenMP_CXX)
+
+    set_target_properties(mysdk PROPERTIES PREFIX "${PYTHON_MODULE_PREFIX}"
+            SUFFIX "${PYTHON_MODULE_EXTENSION}")
+
+    target_include_directories(mysdk PRIVATE ${CMAKE_CURRENT_LIST_DIR}/include)
+    target_include_directories(mysdk PRIVATE ${CMAKE_CURRENT_LIST_DIR}/3rdparty/pybind11-2.3.0/include)
+endif()
