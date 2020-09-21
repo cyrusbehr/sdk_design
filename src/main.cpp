@@ -2,7 +2,11 @@
 
 int main() {
     sdk::MySDK mySdk;
-    mySdk.helloWorld();
+
+    bool faceDetected;
+    std::vector<sdk::FaceBoxAndLandmarks> faceBoxAndLandmarksVec;
+
+    auto res = mySdk.getFaceBoxAndLandmarks("MyPath", faceDetected, faceBoxAndLandmarksVec);
 
     return 0;
 }
