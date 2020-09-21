@@ -301,6 +301,9 @@ void MTCNN::PNet(){
         firstBbox_.insert(firstBbox_.end(), boundingBox_.begin(), boundingBox_.end());
         boundingBox_.clear();
     }
+
+    firstBbox_.erase(std::remove_if(firstBbox_.begin(), firstBbox_.end(), [](const auto& bbox) {
+        return bbox.score < 0.98;}), firstBbox_.end());
 }
 void MTCNN::RNet(){
     secondBbox_.clear();
