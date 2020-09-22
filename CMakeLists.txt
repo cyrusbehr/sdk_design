@@ -4,8 +4,10 @@ cmake_minimum_required(VERSION 3.0)
 option(BUILD_ARM32 "Cross compile the SDK for arm32" OFF)
 option(BUILD_ARM64 "Cross compile the SDK for arm64" OFF)
 
-# Required for python bindings library
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fpic")
+# -fpic required by python bindings library
+# OpenMP required by ncnn which is used by our library.
+# All executables which link against our lib need to link against OpenMP too
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fpic -fopenmp")
 
 # Choose the appropriate toolchain file
 if (BUILD_ARM32)
@@ -80,7 +82,7 @@ endif()
 
 # Unit test
 add_executable(test tests/test.cpp)
-target_link_libraries(test ${CMAKE_CURRENT_BINARY_DIR}/libmy_sdk.a OpenMP::OpenMP_CXX)
+target_link_libraries(test ${CMAKE_CURRENT_BINARY_DIR}/libmy_sdk.a)
 target_include_directories(test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/include)
 target_include_directories(test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/3rdparty/catch2)
 add_dependencies(test my_sdk)
