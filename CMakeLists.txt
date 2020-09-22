@@ -100,3 +100,5 @@ if (NOT BUILD_ARM64 AND NOT BUILD_ARM32)
     target_include_directories(mysdk PRIVATE ${CMAKE_CURRENT_LIST_DIR}/include)
     target_include_directories(mysdk PRIVATE ${CMAKE_CURRENT_LIST_DIR}/3rdparty/pybind11-2.3.0/include)
 endif()
+
+add_subdirectory(docs)
