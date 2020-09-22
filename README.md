@@ -9,7 +9,7 @@ The following instructions assume you are using Ubuntu 18.04
 - `sudo apt-get install gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf g++-arm-linux-gnueabihf`
 - `sudo apt install python3.8`
 - `sudo apt install python3-pip`
-- `pip install cmake`
+- `pip3 install cmake`
 - `sudo apt-get install doxygen`
 - `sudo apt-get install wget`
 
