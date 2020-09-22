@@ -12,6 +12,7 @@ The following instructions assume you are using Ubuntu 18.04
 - `pip3 install cmake`
 - `sudo apt-get install doxygen`
 - `sudo apt-get install wget`
+- `sudo apt-get install zip`
 
 ### Install 3rd Party Libraries
 Navigate to `3rdparty` then run the following:
