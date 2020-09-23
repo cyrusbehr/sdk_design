@@ -18,8 +18,8 @@ jobs:
             cd ~/project/3rdparty
             ./build_pybind11.sh
             ./build_catch.sh
-            ./build_ncnn.sh
-            ./build_opencv.sh
+            test -e ncnn-20200916 || ./build_ncnn.sh
+            test -e opencv-4.4.0 || ./build_opencv.sh
 
 
       - save_cache:
