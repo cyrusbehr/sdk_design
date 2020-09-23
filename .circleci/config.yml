@@ -46,3 +46,21 @@ jobs:
           command: |
             cd ~/project/build_amd64
             ./test
+
+      - run:
+          name: Build for arm32
+          command: |
+            cd ~/project
+            mkdir build_arm32
+            cd build_arm32
+            cmake -DBUILD_ARM32=ON ..
+            make -j4
+
+      - run:
+          name: Build for arm64
+          command: |
+            cd ~/project
+            mkdir build_amd64
+            cd build_amd64
+            cmake -DBUILD_ARM64=ON ..
+            make -j4
