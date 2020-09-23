@@ -1,3 +1,0 @@
-In Python, all types are passed by reference. However, certain types are immuatable (including bool). Therefore, we need to use a lamda function
-
-https://pybind11.readthedocs.io/en/stable/faq.html#limitations-involving-reference-arguments
