@@ -60,7 +60,7 @@ jobs:
           name: Build for arm64
           command: |
             cd ~/project
-            mkdir build_amd64
-            cd build_amd64
+            mkdir build_arm64
+            cd build_arm64
             cmake -DBUILD_ARM64=ON ..
             make -j4
