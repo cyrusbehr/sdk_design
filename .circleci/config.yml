@@ -25,3 +25,18 @@ jobs:
           name: Build 3rd party libraries
           command: |
             cd ~/project/3rdparty
+            ./build_pybind.sh
+            ./build_catch.sh
+            ./build_ncnn.sh
+            ./build_opencv.sh
+
+
+      - save_cache:
+          key: 3rdparty_ncnn-{{ .Environment.CIRCLE_JOB }}-{{ checksum "./3rdparty/build_ncnn.sh" }}
+          paths:
+            - ./3rdparty/ncnn-20200916
+
+      - save_cache:
+          key: 3rdparty_opencv-{{ .Environment.CIRCLE_JOB }}-{{ checksum "./3rdparty/build_opencv.sh" }}
+          paths:
+            - ./3rdparty/opencv-4.4.0
