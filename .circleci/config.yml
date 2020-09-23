@@ -5,16 +5,7 @@ jobs:
       - image: cyrusbehr/sdk_design
 
     steps:
-      - restore_cache:
-          keys:
-            - source-v1-{{ .Branch }}-
-
       - checkout
-
-      - save_cache:
-          key: source-v1-{{ .Branch }}-
-          paths:
-            - ".git"
 
       - restore_cache:
           key: 3rdparty_ncnn-{{ .Environment.CIRCLE_JOB }}-{{ checksum "./3rdparty/build_ncnn.sh" }}
@@ -40,3 +31,18 @@ jobs:
           key: 3rdparty_opencv-{{ .Environment.CIRCLE_JOB }}-{{ checksum "./3rdparty/build_opencv.sh" }}
           paths:
             - ./3rdparty/opencv-4.4.0
+
+      - run:
+          name: Build for amd64
+          command: |
+            cd ~/project
+            mkdir build_amd64
+            cd build_amd64
+            cmake ..
+            make -j4
+
+      - run:
+          name: Run unit tests
+          command: |
+            cd ~/project/build_amd64
+            ./test
