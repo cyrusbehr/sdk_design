@@ -16,7 +16,7 @@ jobs:
           name: Build 3rd party libraries
           command: |
             cd ~/project/3rdparty
-            ./build_pybind.sh
+            ./build_pybind11.sh
             ./build_catch.sh
             ./build_ncnn.sh
             ./build_opencv.sh
