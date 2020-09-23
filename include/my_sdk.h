@@ -37,9 +37,9 @@ namespace sdk {
          *
          * Detect all the faces in an image and return the corresponding face bounding boxes and landmarks
          *
-         * @param imgPath path to the image which will be used for face detection.
-         * @param faceDetected indicates if one or more faces were detected in the image.
-         * @param fbAndLandmarksVec the resulting bounding boxes and landmarks for the detected faces.
+         * @param[in] imgPath path to the image which will be used for face detection.
+         * @param[out] faceDetected indicates if one or more faces were detected in the image.
+         * @param[out] fbAndLandmarksVec the resulting bounding boxes and landmarks for the detected faces.
          * @return error code, see ErrorCode
          */
         ErrorCode getFaceBoxAndLandmarks(const std::string& imgPath, bool& faceDetected, std::vector<FaceBoxAndLandmarks>& fbAndLandmarksVec);
