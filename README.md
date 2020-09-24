@@ -1,6 +1,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![CircleCI](https://circleci.com/gh/circleci/cyrusbehr/sdk_design.svg?style=shield)](https://circleci.com/gh/cyrusbehr/sdk_design)
+[![CircleCI](https://circleci.com/gh/cyrusbehr/sdk_design.svg?style=shield)](https://circleci.com/gh/cyrusbehr/sdk_design)
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
