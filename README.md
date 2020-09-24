@@ -28,6 +28,7 @@
   </p>
 </p>
 
+![alt text](./images/face_detection.jpeg)
 
 ## Getting Started
 The following instructions assume you are using Ubuntu 18.04
