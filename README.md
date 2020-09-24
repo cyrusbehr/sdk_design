@@ -14,10 +14,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">YOUR_TITLE</h3>
+  <h3 align="center">SDK Design</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    How to Design a Language Agnostic SDK for Cross Platform Deployment and Maximum Extensibility
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
@@ -30,9 +30,6 @@
   </p>
 </p>
 
-
-
-# How to Design a Language Agnostic SDK for Cross Platform Deployment and Maximum Extensibility
 
 ## Getting Started
 The following instructions assume you are using Ubuntu 18.04
