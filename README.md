@@ -29,6 +29,7 @@
 </p>
 
 ![alt text](./images/face_detection.jpeg)
+<div style="text-align:center"><img src="./images/face_detection.jpeg" /></div>
 
 ## Getting Started
 The following instructions assume you are using Ubuntu 18.04
