@@ -17,7 +17,7 @@
   <p align="center">
     How to Design a Language Agnostic SDK for Cross Platform Deployment and Maximum Extensibility
     <br />
-    A Venice Computer Vision presentation
+    A Venice Computer Vision Presentation
     <br />
     <br />
     <a href="https://www.youtube.com/watch?v=R4KH2V5pTLI&feature=youtu.be">Video Presentation</a>
