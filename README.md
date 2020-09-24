@@ -22,7 +22,7 @@
     <br />
     <a href="https://www.youtube.com/watch?v=R4KH2V5pTLI&feature=youtu.be">Video Presentation</a>
     ·
-    <a href="">Blog Post</a>
+    <a href="https://medium.com/@cyrus.behroozi">Blog Post</a>
     ·
     <a href="https://venicecomputervision.com/">Venice Computer Vision</a>
   </p>
