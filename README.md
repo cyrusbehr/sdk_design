@@ -1,4 +1,33 @@
-# How to Design a Language Agnostic SDK for Cross Platform Deployment and Maximum Extensibility
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![CircleCI](https://circleci.com/gh/cyrusbehr/sdk_design.svg?style=shield)](https://circleci.com/gh/cyrusbehr/sdk_design)
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/github_username/repo_name">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">SDK Design</h3>
+
+  <p align="center">
+    How to Design a Language Agnostic SDK for Cross Platform Deployment and Maximum Extensibility
+    <br />
+    A Venice Computer Vision presentation
+    <br />
+    <br />
+    <a href="https://www.youtube.com/watch?v=R4KH2V5pTLI&feature=youtu.be">Video Presentation</a>
+    ·
+    <a href="https://medium.com/@cyrus.behroozi">Blog Post</a>
+    ·
+    <a href="https://venicecomputervision.com/">Venice Computer Vision</a>
+  </p>
+</p>
+
 
 ## Getting Started
 The following instructions assume you are using Ubuntu 18.04
@@ -42,3 +71,11 @@ The outputs will be copied to `dist`
 - `make install`
 
 
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[stars-shield]: https://img.shields.io/github/stars/cyrusbehr/sdk_design.svg?style=flat-square
+[stars-url]: https://github.com/cyrusbehr/sdk_design/stargazers
+[issues-shield]: https://img.shields.io/github/issues/cyrusbehr/sdk_design.svg?style=flat-square
+[issues-url]: https://github.com/cyrusbehr/sdk_design/issues
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/cyrus-behroozi/
