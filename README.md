@@ -38,6 +38,8 @@ This project demonstrates how to build a language agnostic SDK for cross platfor
 - Write python bindings for our library
 - Generate documentation directly from our API
 
+Please refer to the video presentation or blog post linked above for a detailed explantation.
+
 ![alt text](./images/face_detection.jpeg)
 
 ## Getting Started
