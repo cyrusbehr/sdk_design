@@ -17,8 +17,7 @@
   <p align="center">
     How to Design a Language Agnostic SDK for Cross Platform Deployment and Maximum Extensibility
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
+    A Venice Computer Vision Meetup presentation
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
     ·
