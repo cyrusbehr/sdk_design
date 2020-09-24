@@ -33,8 +33,6 @@ set(MY_SDK_SRC_FILES
 # Our SDK library
 add_library(my_sdk_static ${MY_SDK_SRC_FILES})
 
-find_package(OpenMP REQUIRED)
-
 target_include_directories(my_sdk_static PRIVATE ${CMAKE_CURRENT_LIST_DIR}/)
 target_include_directories(my_sdk_static PRIVATE ${CMAKE_CURRENT_LIST_DIR}/include)
 target_include_directories(my_sdk_static PRIVATE ${CMAKE_CURRENT_LIST_DIR}/3rdparty/opencv-4.4.0/${OPENCV_BUILD_DIR}/packaged/usr/local/include/opencv4)
@@ -94,7 +92,7 @@ if (NOT BUILD_ARM64 AND NOT BUILD_ARM32)
     add_library(mysdk SHARED python/py_binding.cpp)
     add_dependencies(mysdk my_sdk)
 
-    target_link_libraries(mysdk PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/libmy_sdk.a pybind11::module OpenMP::OpenMP_CXX)
+    target_link_libraries(mysdk PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/libmy_sdk.a pybind11::module)
 
     set_target_properties(mysdk PROPERTIES PREFIX "${PYTHON_MODULE_PREFIX}"
             SUFFIX "${PYTHON_MODULE_EXTENSION}")
