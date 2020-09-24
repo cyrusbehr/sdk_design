@@ -30,7 +30,7 @@
 
 # SDK Design
 This project demonstrates how to build a language agnostic SDK for cross platform deployment and maximum extensibility. It will cover how to do the following:
-- Build a basic computer vision library in C++
+- Build a basic face detection computer vision library in C++
 - Compile / cross compile the library for amd64, arm64, arm32
 - Package that library and its dependencies as a single static library
 - Add unit tests
