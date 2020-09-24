@@ -28,8 +28,17 @@
   </p>
 </p>
 
+# SDK Design
+This project demonstrates how to build a language agnostic SDK for cross platform deployment and maximum extensibility. It will cover how to do the following:
+- Build a basic computer vision library in C++
+- Compile / cross compile the library for amd64, arm64, arm32
+- Package that library and its dependencies as a single static library
+- Add unit tests
+- Set up a CI pipeline
+- Write python bindings for our library
+- Generate documentation directly from our API
+
 ![alt text](./images/face_detection.jpeg)
-<div style="text-align:center"><img src="./images/face_detection.jpeg" /></div>
 
 ## Getting Started
 The following instructions assume you are using Ubuntu 18.04
