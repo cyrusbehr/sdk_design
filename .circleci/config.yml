@@ -45,7 +45,7 @@ jobs:
           name: Run unit tests
           command: |
             cd ~/project/build_amd64
-            ./test
+            ./run_tests
 
       - run:
           name: Build for arm32
