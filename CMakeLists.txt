@@ -79,11 +79,11 @@ else()
 endif()
 
 # Unit test
-add_executable(test tests/test.cpp)
-target_link_libraries(test ${CMAKE_CURRENT_BINARY_DIR}/libmy_sdk.a)
-target_include_directories(test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/include)
-target_include_directories(test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/3rdparty/catch2)
-add_dependencies(test my_sdk)
+add_executable(run_tests tests/test.cpp)
+target_link_libraries(run_tests ${CMAKE_CURRENT_BINARY_DIR}/libmy_sdk.a)
+target_include_directories(run_tests PRIVATE ${CMAKE_CURRENT_LIST_DIR}/include)
+target_include_directories(run_tests PRIVATE ${CMAKE_CURRENT_LIST_DIR}/3rdparty/catch2)
+add_dependencies(run_tests my_sdk)
 
 # Create python bindings library
 # Only build for amd64
