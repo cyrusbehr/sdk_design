@@ -2,7 +2,7 @@
 # - install AArch64 tool chain:
 #   $ sudo apt-get install g++-aarch64-linux-gnu
 # - cross-compiling config
-#   $ cmake -DCMAKE_TOOLCHAIN_FILE=../dynamorio/make/toolchain-arm64.cmake ../dynamorio
+#   $ cmake -DCMAKE_TOOLCHAIN_FILE=../tools/make/toolchain-arm64.cmake ..
 # You may have to set CMAKE_FIND_ROOT_PATH to point to the target enviroment, e.g.
 # by passing -DCMAKE_FIND_ROOT_PATH=/usr/aarch64-linux-gnu on Debian-like systems.
 set(CMAKE_SYSTEM_NAME Linux)

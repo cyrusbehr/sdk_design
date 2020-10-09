@@ -2,7 +2,7 @@
 # - install arm-linux-gnueabi-gcc package:
 #   $ sudo apt-get install gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf g++-arm-linux-gnueabihf
 # - cross-compiling config
-#   $ cmake -DCMAKE_TOOLCHAIN_FILE=../dynamorio/make/toolchain-arm32.cmake ../dynamorio
+#   $ cmake -DCMAKE_TOOLCHAIN_FILE=../tools/make/toolchain-arm32.cmake ..
 # You may have to set CMAKE_FIND_ROOT_PATH to point to the target enviroment, e.g.
 # by passing -DCMAKE_FIND_ROOT_PATH=/usr/arm-linux-gnueabihf on Debian-like systems.
 set(CMAKE_SYSTEM_NAME Linux)
