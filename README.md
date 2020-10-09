@@ -8,7 +8,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/cyrusbehr/sdk_design">
     <img width="30%" src="images/logo.svg" alt="logo">
   </a>
 
