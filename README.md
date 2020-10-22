@@ -40,7 +40,7 @@ This project demonstrates how to build a language agnostic SDK for cross platfor
 - Write python bindings for our library
 - Generate documentation directly from our API
 
-Please refer to the video presentation or blog post linked above for a detailed explantation.
+Please refer to the [blog post](https://social.trueface.ai/34gcD2q) for a detailed tutorial and explanation of all the components of this project.
 
 ![alt text](./images/face_detection.jpeg)
 
