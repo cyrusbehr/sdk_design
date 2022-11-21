@@ -22,7 +22,7 @@
     <br />
     <a href="https://www.youtube.com/watch?v=R4KH2V5pTLI&feature=youtu.be">Video Presentation</a>
   ·
-  <a href="https://docs.google.com/presentation/d/1hluqipWiqk3ACReqXf_7tpwtTfCvFcvSwOj4sf3Su6A/edit?usp=sharing">Presentation Slides</a>
+  <a href="https://docs.google.com/presentation/d/1PVeBD8jItbhY8xkHEdT4CrS3LQ7MnGZ0/edit?usp=share_link&ouid=110822293658782092853&rtpof=true&sd=true">Presentation Slides</a>
     ·
     <a href="https://social.trueface.ai/34gcD2q">Blog Post</a>
     ·
